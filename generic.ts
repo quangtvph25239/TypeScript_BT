@@ -1,6 +1,6 @@
-const numArray4 = [4,7,3,8,9,10]
-const numArray5 = ["Thi", "Hong", "Anh", "Nga"]
-function bubbleSort<T>(arr: T[]): T[] {
+const numArray = [5,2,6,8,3,12]
+const numArray1 = ["Tran", "Viet", "Quang"]
+function selectionSort1<T>(arr: T[]): T[] {
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -12,6 +12,6 @@ function bubbleSort<T>(arr: T[]): T[] {
     return arr;
 }
 
-bubbleSort(numArray5)
+selectionSort1(numArray)
 
-console.log(numArray5);
+console.log(numArray);
