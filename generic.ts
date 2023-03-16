@@ -1,6 +1,6 @@
 const numArray = [5,2,6,8,3,12]
 const numArray1 = ["Tran", "Viet", "Quang"]
-function selectionSort1<T>(arr: T[]): T[] {
+function selectionSort<T>(arr: T[]): T[] {
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -12,6 +12,6 @@ function selectionSort1<T>(arr: T[]): T[] {
     return arr;
 }
 
-selectionSort1(numArray)
+selectionSort(numArray)
 
 console.log(numArray);
